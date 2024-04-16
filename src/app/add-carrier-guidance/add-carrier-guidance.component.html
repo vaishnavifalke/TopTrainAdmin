@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyLdy6WvATKFIddjauEMUAHzI/6vpW6L" crossorigin="anonymous">
+  <title>CarrierGuidance Form</title>
+</head>
+
+<body>
+
+  <div class="container mt-5">
+    <h2>CarrierGuidance Form</h2>
+    <form>
+
+      <!-- CarrierGuidanceId -->
+      <div class="form-group row">
+        <label for="CarrierGuidanceId" class="col-sm-2 col-form-label">CarrierGuidanceId</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="CarrierGuidanceId" [(ngModel)]="carrierGuidance.CarrierGuidanceId" #carrierGuidanceId="ngModel" name="CarrierGuidanceId" placeholder="Enter CarrierGuidanceId">
+        </div>
+      </div>
+
+      <br>
+
+      <!-- RegistrationId -->
+      <div class="form-group row">
+        <label for="RegistrationId" class="col-sm-2 col-form-label">RegistrationId</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="RegistrationId" [(ngModel)]="carrierGuidance.RegistrationId" #registrationId="ngModel" name="RegistrationId" placeholder="Enter RegistrationId">
+        </div>
+      </div>
+
+      <br>
+
+      <!-- UserEducationId -->
+      <div class="form-group row">
+        <label for="UserEducationId" class="col-sm-2 col-form-label">UserEducationId</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="UserEducationId" [(ngModel)]="carrierGuidance.UserEducationId" #userEducationId="ngModel" name="UserEducationId" placeholder="Enter UserEducationId">
+        </div>
+      </div>
+
+      <br>
+
+      <!-- Title -->
+      <div class="form-group row">
+        <label for="Title" class="col-sm-2 col-form-label">Title</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="Title" [(ngModel)]="carrierGuidance.Title" #title="ngModel" name="Title" placeholder="Enter Title">
+        </div>
+      </div>
+
+      <br>
+
+      <!-- Description -->
+      <div class="form-group row">
+        <label for="Description" class="col-sm-2 col-form-label">Description</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="Description" [(ngModel)]="carrierGuidance.Description" #description="ngModel" name="Description" placeholder="Enter Description">
+        </div>
+      </div>
+
+      <br>
+
+      <!-- Status -->
+      <div class="form-group row">
+        <label for="Status" class="col-sm-2 col-form-label">Status</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="Status" [(ngModel)]="carrierGuidance.Status" #status="ngModel" name="Status" placeholder="Enter Status">
+        </div>
+      </div>
+
+      <br>
+
+      <!-- Submit Button -->
+      <div class="form-group row">
+        <div class="col-sm-10 offset-sm-2">
+          <button type="submit" (click)="OnSubmit()" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+</body>
+
+</html>

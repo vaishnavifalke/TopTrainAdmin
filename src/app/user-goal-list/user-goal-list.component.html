@@ -1,0 +1,46 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title ">UserGoal</h4>
+                        <p class="card-category"> View here all UserGoal table record</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class=" text-primary" style="background-color: #ea48441c;">
+                                    <th>UserGoalId</th>
+                                    <th>RegistrationId</th>
+                                    <th>GoalDescription</th>
+                                    <th>TargetDate</th>
+                                    <th>Progress</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let i of UserGoalList">
+                                        <td>{{i.UserGoalId}}</td>
+                                        <td>{{i.RegistrationId}}</td>  
+                                        <td>{{i.GoalDescription}}</td>
+                                        <td>{{i.TargetDate}}</td>
+                                        <td>{{i.Progress}}</td>
+                                        <td>{{i.Status}}</td>
+                                        <td>
+                                            <i class="fa fa-pencil-square iconaction" (click)="Edit(i.UserGoalId)" aria-hidden="true"></i>
+                                            &nbsp;
+                                            <i class="fa fa-eye iconaction" (click)="View(i.UserGoalId)" aria-hidden="true"></i>
+                                            &nbsp;
+                                            <i class="fa fa-trash iconaction" (click)="Delete(i.UserGoalId)" aria-hidden="true"></i>
+                                        </td>
+                                    </tr>    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

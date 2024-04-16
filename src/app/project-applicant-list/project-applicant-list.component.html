@@ -1,0 +1,42 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title ">ProjectApplicant List</h4>
+                        <p class="card-category">View here all ProjectApplicant table records</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class="text-primary" style="background-color: #ea48441c;">
+                                    <th>ProjectApplicantId</th>
+                                    <th>ProjectId</th>
+                                    <th>RegistrationId</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let i of ProjectApplicantList">
+                                        <td>{{i.ProjectApplicantId}}</td>
+                                        <td>{{i.ProjectId}}</td>
+                                        <td>{{i.RegistrationId}}</td>
+                                        <td>{{i.Status}}</td>
+                                        <td>
+                                            <i class="fa fa-pencil-square iconaction" (click)="Edit(i.ProjectApplicantId)" aria-hidden="true"></i>
+                                            &nbsp;
+                                            <i class="fa fa-eye iconaction" (click)="View(i.ProjectApplicantId)" aria-hidden="true"></i>
+                                            &nbsp;
+                                            <i class="fa fa-trash iconaction" (click)="Delete(i.ProjectApplicantId)" aria-hidden="true"></i>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

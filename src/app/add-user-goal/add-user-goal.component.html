@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyLdy6WvATKFIddjauEMUAHzI/6vpW6L" crossorigin="anonymous"> -->
+  <title>UserGoal Form</title>
+</head>
+
+<body>
+
+  <div class="container mt-5">
+    <h2>UserGoal Form</h2>
+    <form>
+
+      <!-- UserGoalId -->
+      <!-- <div class="form-group row">
+        <label for="UserGoalId" class="col-sm-2 col-form-label">UserGoalId</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="UserGoalId" [(ngModel)]="userGoal.UserGoalId" #userGoal="ngModel" name="UserGoalId"  placeholder="Enter UserGoalId">
+        </div>
+      </div> -->
+   
+      <br>
+
+      <!-- RegistrationId -->
+      <div class="form-group row">
+        <label for="RegistrationId" class="col-sm-2 col-form-label">RegistrationId</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="RegistrationId" [(ngModel)]="userGoal.RegistrationId" #registrationId="ngModel" name="RegistrationId" placeholder="Enter RegistrationId">
+        </div>
+      </div>
+
+      <br>
+
+      <!-- GoalDescription -->
+      <div class="form-group row">
+        <label for="GoalDescription" class="col-sm-2 col-form-label">GoalDescription</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="GoalDescription" [(ngModel)]="userGoal.GoalDescription" #goalDescription="ngModel" name="GoalDescription" placeholder="Enter GoalDescription">
+        </div>
+      </div>
+
+      <br>
+
+      <!-- TargetDate -->
+      <div class="form-group row">
+        <label for="TargetDate" class="col-sm-2 col-form-label">TargetDate</label>
+        <div class="col-sm-10">
+          <input type="date" class="form-control" id="TargetDate" [(ngModel)]="userGoal.TargetDate" #targetDate="ngModel" name="TargetDate">
+        </div>
+      </div>
+
+      <br>
+
+      <!-- Progress -->
+      <div class="form-group row">
+        <label for="Progress" class="col-sm-2 col-form-label">Progress</label>
+        <div class="col-sm-10">
+          <input type="number" class="form-control" id="Progress" [(ngModel)]="userGoal.Progress" #progress="ngModel" name="Progress" placeholder="Enter Progress">
+        </div>
+      </div>
+
+      <br>
+
+      <!-- Status -->
+      <div class="form-group row">
+        <label for="Status" class="col-sm-2 col-form-label">Status</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="Status" [(ngModel)]="userGoal.Status" #status="ngModel" name="Status" placeholder="Enter Status">
+        </div>
+      </div>
+
+      <br>
+
+      <!-- Submit Button -->
+      <div class="form-group row">
+        <div class="col-sm-10 offset-sm-2">
+          <button type="submit" (click)="OnSubmit()" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>MockInterview Form</title>
+</head>
+
+<body>
+
+  <div class="container mt-5">
+    <h2>MockInterview Form</h2>
+    <form>
+
+      <!-- MockInterviewId -->
+      <div class="form-group row">
+        <label for="MockInterviewId" class="col-sm-2 col-form-label">MockInterviewId</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="MockInterviewId" [(ngModel)]="mockInterview.MockInterviewId" #mockInterviewId="ngModel" name="MockInterviewId" placeholder="Enter MockInterviewId">
+        </div>
+      </div>
+
+      <br>
+
+      <!-- RegistrationId -->
+      <div class="form-group row">
+        <label for="RegistrationId" class="col-sm-2 col-form-label">RegistrationId</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="RegistrationId" [(ngModel)]="mockInterview.RegistrationId" #registrationId="ngModel" name="RegistrationId" placeholder="Enter RegistrationId">
+        </div>
+      </div>
+
+      <br>
+
+      <!-- InterviewDate -->
+      <div class="form-group row">
+        <label for="InterviewDate" class="col-sm-2 col-form-label">InterviewDate</label>
+        <div class="col-sm-10">
+          <input type="date" class="form-control" id="InterviewDate" [(ngModel)]="mockInterview.InterviewDate" #interviewDate="ngModel" name="InterviewDate" placeholder="Enter InterviewDate">
+        </div>
+      </div>
+
+      <br>
+
+      <!-- Interviewer -->
+      <div class="form-group row">
+        <label for="Interviewer" class="col-sm-2 col-form-label">Interviewer</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="Interviewer" [(ngModel)]="mockInterview.Interviewer" #interviewer="ngModel" name="Interviewer" placeholder="Enter Interviewer">
+        </div>
+      </div>
+
+      <br>
+
+      <!-- Feedback -->
+      <div class="form-group row">
+        <label for="Feedback" class="col-sm-2 col-form-label">Feedback</label>
+        <div class="col-sm-10">
+          <textarea class="form-control" id="Feedback" [(ngModel)]="mockInterview.Feedback" #feedback="ngModel" name="Feedback" placeholder="Enter Feedback"></textarea>
+        </div>
+      </div>
+
+      <br>
+
+      <!-- Status -->
+      <div class="form-group row">
+        <label for="Status" class="col-sm-2 col-form-label">Status</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="Status" [(ngModel)]="mockInterview.Status" #status="ngModel" name="Status" placeholder="Enter Status">
+        </div>
+      </div>
+
+      <br>
+
+      <!-- Submit Button -->
+      <div class="form-group row">
+        <div class="col-sm-10 offset-sm-2">
+          <button type="submit" (click)="OnSubmit()" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+</body>
+
+</html>
